@@ -1,0 +1,17 @@
+\appendix
+
+Fig.~4 and Fig.~5 below are referenced from Section~IV-B, and give the full per-participant wrist-PPG respiration rate results for S7 and S8 respectively.
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.85\textwidth]{S7_ppg_resp_rate_sitting.png}
+    \caption{Participant S7, sitting: wrist PPG (top); heart rate from the chest ECG reference vs. the wrist-PPG pulse detector (middle); and respiration rate from the RespiBAN ensemble ground truth vs. the wrist-PPG-derived estimate, after per-participant DC baseline calibration (bottom). The PPG-derived respiration rate closely tracks the reference level and slow trend (MAE 1.8 breaths/min, RMSE 2.3 breaths/min).}
+    \label{fig:s7-rr}
+\end{figure*}
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.85\textwidth]{S8_ppg_resp_rate_sitting.png}
+    \caption{Participant S8, sitting: wrist PPG (top); heart rate from the chest ECG reference vs. the wrist-PPG pulse detector (middle); and respiration rate from the RespiBAN ensemble ground truth vs. the wrist-PPG-derived estimate, after per-participant DC baseline calibration (bottom). The PPG-derived respiration rate again tracks the reference level and slow trend reasonably closely (MAE 2.2 breaths/min, RMSE 2.8 breaths/min), though heart rate tracking is more affected by intermittent motion artefacts than for S7.}
+    \label{fig:s8-rr}
+\end{figure*}

@@ -1,0 +1,86 @@
+% ============================================================
+% Mathematics
+% ============================================================
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{bm}
+
+
+% ============================================================
+% Units and numbers
+% ============================================================
+\usepackage{siunitx}
+
+\sisetup{
+    per-mode = symbol,
+    range-phrase = {--},
+    range-units = single
+}
+
+% Examples:
+% \SI{25}{\milli\meter}
+% \SI{3.3}{\volt}
+% \SIrange{5}{10}{\hertz}
+% \qty{25}{\milli\meter}  % newer siunitx syntax
+
+
+% ============================================================
+% Figures
+% ============================================================
+\usepackage{graphicx}
+\graphicspath{{figures/}}
+
+% IEEE-compatible subfigures
+\usepackage[caption=false,font=footnotesize]{subfig}
+
+
+% ============================================================
+% Tables
+% ============================================================
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{array}
+
+
+% ============================================================
+% References and URLs
+% ============================================================
+\usepackage{cite}
+\usepackage{xurl}
+
+
+% ============================================================
+% Typography
+% ============================================================
+\usepackage{microtype}
+
+
+% ============================================================
+% Hyperlinks
+% Keep hyperref near the end of the preamble
+% ============================================================
+\usepackage[
+    hidelinks
+]{hyperref}
+
+
+% ============================================================
+% Useful custom commands
+% ============================================================
+
+% Vectors
+\newcommand{\vect}[1]{\bm{#1}}
+
+% Differential operator
+\newcommand{\diff}{\mathop{}\!\mathrm{d}}
+
+% Common abbreviations
+\newcommand{\COPD}{COPD}
+
+% Reference shortcuts
+\newcommand{\figref}[1]{Fig.~\ref{#1}}
+\newcommand{\tabref}[1]{Table~\ref{#1}}
+\newcommand{\secref}[1]{Section~\ref{#1}}
+\newcommand{\eqnref}[1]{(\ref{#1})}
