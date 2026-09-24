@@ -1,18 +1,20 @@
 # Fdb version 4
-["bibtex main"] 1790137629.98464 "main.aux" "main.bbl" "main" 1790137721.27026 0
+["bibtex main"] 1790221913.22272 "main.aux" "main.bbl" "main" 1790221921.72184 0
   "./references.bib" 1790132566 128742 669a740954ccec264735bc62633f4531 ""
   "c:/texlive/2026/texmf-dist/bibtex/bst/ieeetran/IEEEtran.bst" 1785992586 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
-  "main.aux" 1790137719 8335 780ae6eaff28d483aec9c0a9270be9a4 "pdflatex"
+  "main.aux" 1790221919 9088 aa45f60e980141990b4f3fe7cb65e24d "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1790137717.26759 "main.tex" "main.pdf" "main" 1790137721.27122 0
+["pdflatex"] 1790221915.06598 "c:/Users/dylan/Downloads/MECHENG736_Report/main.tex" "main.pdf" "main" 1790221921.72264 0
   "Sections/Appendix.tex" 1790136791 1401 f66e154efca258c581924dd924c8a374 ""
+  "Sections/ConceptualDesign.tex" 1790221847 6680 218d655ad060b61c0e9a56ee36214e87 ""
   "Sections/DetailedDesign.tex" 1790137578 2688 66972f9e87db6ef107ee125f57074189 ""
   "Sections/Introduction.tex" 1789970651 1716 e801cd4da980faaa0bb632d4b9c889c0 ""
   "Sections/Literature Review.tex" 1789970651 4916 26362349deaf5d35b091b7aeee07bc8a ""
   "Sections/ValidationOfFeasibility.tex" 1790137695 11444 ce80442f09205e67c1156b6290acbf53 ""
+  "c:/Users/dylan/Downloads/MECHENG736_Report/main.tex" 1790221904 647 6e5c6be651384f750f3b69b17f9cfb8c ""
   "c:/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc" 1785989056 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2026/texmf-dist/fonts/map/fontname/texfonts.map" 1785990638 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "c:/texlive/2026/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1786062461 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -150,10 +152,10 @@
   "figures/S8_ppg_resp_rate_sitting.png" 1790135223 314911 7beec1bb66f3e13f6ee1c373f95b258b ""
   "figures/S8_resp_rate_sitting.png" 1790135625 195367 653edd8a4c3f06da3a33f58341779231 ""
   "figures/exploded_view_annotated.png" 1790125489 231109 8a3ba331c7c8356a1f70ef3c548189e6 ""
-  "main.aux" 1790137719 8335 780ae6eaff28d483aec9c0a9270be9a4 "pdflatex"
-  "main.bbl" 1790137630 4079 087b5484d435b7548e88f07b8c9fbea3 "bibtex main"
-  "main.out" 1790137719 2179 9f6e940ccd28fe23f0fc0ab43a0b2d9e "pdflatex"
-  "main.tex" 1790136712 612 f9ff46af1845c613939ed25558196d90 ""
+  "main.aux" 1790221919 9088 aa45f60e980141990b4f3fe7cb65e24d "pdflatex"
+  "main.bbl" 1790221915 4013 8c1b7760e0a8b29ea8cb222f78708f46 "bibtex main"
+  "main.out" 1790221919 3062 900989f48c48849233a31697cf9f513d "pdflatex"
+  "main.tex" 1790221904 647 6e5c6be651384f750f3b69b17f9cfb8c ""
   "preamble.tex" 1790137609 2162 55e649cad3a9917e3a3c3bdd1b33be59 ""
   (generated)
   "main.aux"
