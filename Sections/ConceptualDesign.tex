@@ -1,1 +1,36 @@
 \section{Conceptual Design}
+\label{sec:conceptual-design}
+
+\subsection{Concept Overview}
+The working concept is a wrist device with automatic prompting that guides a person with COPD through a breathing exercise during recovery after physical activity. Buttons allow the user to request assistance, respond to prompts and control the session, while haptic cues communicate the breathing routine. Wrist PPG and motion sensing will provide candidate physiological measurements and information about signal quality.
+
+\subsection{Design Requirements}
+The proposed device is intended to coach a person with COPD through a breathing exercise after physical activity or breathlessness. The suitable concept must meet the below requirements, with further detail and performance targets listed in Appendix A.
+
+Under user interaction, the user must be able to start, pause and stop a session with minimal interaction, always. The device must also provide clear cues for the actions and timing of the breathing exercise. Finally, the user must be able to report breathlessness and other adverse symptoms easily.
+
+For Monitoring \& Reliability, the device should estimate and monitor the user's heart rate and respiratory rate when the available signals are sufficiently reliable. It must identify times where movement and other interference create unreliable data and avoid using that data for feedback and monitoring. Finally, the device should prompt an intervention if it detects breathlessness, or other concerning user states. See further details in Appendix A.
+
+On top of these requirements, the device must also be comfortable to wear during exercise and long periods. It must also be battery powered, so users can go about their day. All the data must be stored locally on the device and require explicit consent from the user to share with clinicians.
+
+\subsection{Concept Selection and Rationale}
+The five concepts compared in Appendix B are a wrist-worn device providing manual timed guidance (C1), a wrist-worn device adding physiological monitoring (C2), a wrist-worn device adding automatic prompting (C3), a chest band with the same functionality of C2, and C3 with the addition of a pet robot frog as a physical coach.
+
+We selected C3 because it combines monitoring with prompts to check symptoms and retains manual control. It has the added benefit over C1 and C2 of responding to the user without prompting, instead of needing user input for health benefits. This makes it a better health aid for users with COPD. We discounted C4 because of the reduced comfort and ease of user interaction daily, although a chest band would see more accurate measurements. The addition of a coach robot frog, which would mimic the breathing exercises for the user to follow along with would be novel, but has an unproven benefit to user health, and further hampers the day-to-day use of the device.
+
+\subsection{System Architecture and Operation}
+The system performs six functions: acquiring signals, assessing measurements, responds to assessment, reacts to user input, delivers breathing cues \& stores relevant data locally. PPG provides biological sensing, while buttons and haptic feedback provide human--robot interaction through user input and device response.
+
+\noindent\textbf{Signal acquisition:} The PPG sensor records an optical signal from the wrist for estimating heart rate and respiratory rate. The motion sensor records wrist movement to provide the user's activity for the context of the data. Appropriate filtering is applied to clean the signal, which is calibrated for each user's baseline during rest.
+
+\noindent\textbf{Measurement Assessment:} The signals are then checked for interference, supplemented by the motion data. Unreliable measurements are discarded. The device then defines the user state based on the signal into resting, light activity, high activity, concerning heartrate or respiratory rate, and additionally breathlessness.
+
+\noindent\textbf{Assessment Response:} The device uses these assessments to determine the feedback required. If the user records prolonged high activity, or breathlessness, the device will prompt the user to rest and begin a breathing exercise. If the user's heart rate or respiratory rate is concerningly high, based on the resting rate of the user, the device will prompt the user to rest and start a breathing exercise. Prompts request user confirmation before guidance starts, with the user able to dismiss them or request assistance independently.
+
+\noindent\textbf{UI Reaction:} The device will also be constantly ready to respond to user interaction, allowing a user to start, stop and pause a breathing exercise, along with logging concerning symptoms like breathlessness, and score their symptoms regularly. The device will use this interaction to inform which exercise to guide the user through and for how long. The symptom scale is based on the Borg CR10 scale described in the literature review [2]: the user adjusts a 0--10 breathlessness rating with two buttons, receives vibration feedback for the selected value, and holds both buttons to confirm it.
+
+\noindent\textbf{Delivering Breathing Cues:} The device stores several predefined breathing routines and will propose exercises which can be overruled by the user. It delivers haptic cues for the chosen routine's inhale, exhale and, where applicable, hold phases; pursed-lip breathing is the proposed default after activity. During still periods, wrist PPG may allow the device to estimate breathing phases and compare their timing with the cues, while motion sensing flags unreliable data. The user can pause or stop at any time.
+
+\noindent\textbf{Data Storage:} The device stores selected data locally, like average heart rate and respiratory rate. It also stores symptom scores and logs, along with session details like duration and type of exercise. Unreliable data would not be stored. The data would only be able to be exported to a clinician or other medical professionals through a manual process requiring the user's explicit consent.
+
+\noindent\textbf{Operating sequence:} The user can request assistance after activity or respond to an automatic prompt. Once resting, they report their breathlessness and confirm whether to begin. The device delivers breathing cues and monitors usable signals while the user retains start, pause and stop control. If signals become unreliable, measurement-based feedback and automatic assessment are suspended; user-controlled timed guidance remains available. At completion or early stopping, the user is asked to report symptoms again and the session is stored locally.
