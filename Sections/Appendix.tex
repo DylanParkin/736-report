@@ -1,6 +1,46 @@
 \appendix
 
-Fig.~4 and Fig.~5 below are referenced from Section~IV-B, and give the full per-participant wrist-PPG respiration rate results for S7 and S8 respectively.
+\figref{fig:schematic} shows the full electrical schematic of the device, as described in Section~IV-B.
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{electrical_schematic.jpeg}
+    \caption{Electrical schematic of the wearable device, comprising the ESP32-C3 microcontroller, the BMI270 IMU and MAXM86161 PPG sensor circuits, the wireless charging circuit (BQ51003 Qi receiver and BQ25120A charger), and the voltage regulation circuit (TPS61240 boost and TPS62743 buck converters).}
+    \label{fig:schematic}
+\end{figure*}
+
+\figref{fig:fsm} shows the full finite state machine governing the device's operation, as described in Section~IV-C.
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{copd_fsm.png}
+    \caption{Finite state machine governing the device's operation. The Active superstate contains the Monitoring, User Input, Guided Session and Data Handling states, each with its own substates and transitions. The separate Alert state is entered from Active when unsafe metrics are detected, and delivers a repeating high-frequency haptic alert until acknowledged.}
+    \label{fig:fsm}
+\end{figure*}
+
+\tabref{tab:fsm-states} and \tabref{tab:fsm-transitions} detail the states and transitions of the FSM in \figref{fig:fsm}.
+
+% The FSM tables are set as figure* floats with a table caption type, so they
+% share the figure queue and always appear after the FSM diagram.
+\makeatletter
+\begin{figure*}[t]
+    \def\@captype{table}
+    \centering
+    \caption{FSM states and substates}
+    \label{tab:fsm-states}
+    \includegraphics[width=\textwidth]{fsm_states_table.png}
+\end{figure*}
+
+\begin{figure*}[t]
+    \def\@captype{table}
+    \centering
+    \caption{FSM transitions, with triggering events and guard conditions}
+    \label{tab:fsm-transitions}
+    \includegraphics[width=\textwidth]{fsm_transitions_table.png}
+\end{figure*}
+\makeatother
+
+\figref{fig:s7-rr} and \figref{fig:s8-rr} below are referenced from Section~V-B, and give the full per-participant wrist-PPG respiration rate results for S7 and S8 respectively.
 
 \begin{figure*}[t]
     \centering
