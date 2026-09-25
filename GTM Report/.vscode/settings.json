@@ -1,0 +1,22 @@
+{
+  "latex-workshop.latex.outDir": "%DIR%/out",
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.recipe.default": "lastUsed",
+  "latex-workshop.formatting.latex": "latexindent",
+  "latex-workshop.formatting.latexindent.args": [
+    "-c",
+    "%DIR%/",
+    "-l=%DIR%/.latexindent.yaml",
+    "-m",
+    "%TMPFILE%"
+  ],
+  "latex-workshop.format.fixMath.enabled": true,
+  "latex-workshop.format.fixQuotes.enabled": true,
+  "latex-workshop.synctex.afterBuild.enabled": true,
+  "[latex]": {
+    "editor.defaultFormatter": "James-Yu.latex-workshop",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": false,
+    "editor.formatOnType": false
+  }
+}

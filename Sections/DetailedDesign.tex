@@ -15,7 +15,11 @@ The wearable adopts a standard wristwatch form factor, comprising a single mould
 
 \subsection{Electrical and Sensor Circuitry}
 
-hi
+The electronics comprise three subsystems: physiological sensing, processing and communication, and wireless power management (Fig. X). Photoplethysmography (PPG) is acquired using the MAXM86161 optical module [1], which integrates green, red and infrared LEDs with a photodiode and 19-bit ADC in a 2.9mm x 4.3mm x 1.4mm package. The green channel was selected for heart rate (HR) estimation because it more robustly tracks pulsatile flow at the wrist during movement, whereas the red/IR pair enables SpO₂ estimation. Because motion artefact is the dominant source of error in wrist PPG, a BMI270 six-axis IMU [2] provides a synchronous acceleration reference for adaptive artefact cancellation and signal-quality gating; its on-chip activity detection also supports gait and exertion metrics relevant to COPD functional assessment. Both sensors communicate with an ESP32-C3 microcontroller [3] over I²C at 100 Hz, which runs HR/SpO₂ and processes the data locally. 
+
+Power is delivered wirelessly through a WR221230-36M8-G receiver coil [4] and BQ51003 Qi receiver [5], feeding a BQ25120A charger [5] that charges a 240 mAh Li-ion cell at 380 mA and supplies a 1.8 V rail for the sensors. A TPS62743 buck converter [6] provides the 3.3 V rail for the MCU. A TPS61240YFFT boost converter [7] provides 5.0 V rail for the green LEDs. Wireless charging was chosen because it removes the need for an exposed connector, allowing a sealed, easily cleaned enclosure, and avoids fine-motor connector handling for older users with reduced dexterity. The estimated average current of 30 mA gives a battery life of approximately 8 h. 
+
+Following the TROIKA framework \cite[8], PPG and IMU signals are sampled at 25 Hz. With two sessions per day capped at 30 minutes, each session produces ~1.05 MB (23 bytes/sample plus per-second timestamp and CRC), giving ~2.1 MB/day and ~63 MB per 30-day review cycle. A 1 Gbit (128 MB) SPI NAND flash Winbond W25N01GV [9] provides a full month of storage with around 2× margin for additional episodes and bad-block reserve. 
 
 \subsection{Software and Control Logic}
 
