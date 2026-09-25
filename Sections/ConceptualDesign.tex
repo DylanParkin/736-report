@@ -1,8 +1,23 @@
 \section{Conceptual Design}
 \label{sec:conceptual-design}
 
+This section draws on the findings of the literature review, along with an interview with a local respiratory physiotherapist, to inform the key functions and form of a proposed wearable device to support COPD patients. It covers the key design requirements, the proposed concepts and the justification for the chosen concept, and a high-level overview of the intended system operation.
+
 \subsection{Concept Overview}
 The working concept is a wrist device with automatic prompting that guides a person with COPD through a breathing exercise during recovery after physical activity. Buttons allow the user to request assistance, respond to prompts and control the session, while haptic cues communicate the breathing routine. Wrist PPG and motion sensing will provide candidate physiological measurements and information about signal quality.
+
+\subsection{Industry Consultation}
+We interviewed a respiratory physiotherapist based in Manukau, Auckland, with experience treating patients with COPD and related respiratory illnesses. The interview aimed to establish whether the proposed design was feasible and likely to provide real value to people with COPD, and to learn about current state-of-the-art clinical practice in this area. The key findings are summarised below.
+
+The physiotherapist confirmed that breathlessness is a key problem affecting quality of life for people with COPD. With a limited number of clinicians available, a take-home wearable could relieve some of the burden on the healthcare system and on respiratory physiotherapists. The device would be especially useful for newly diagnosed patients learning to self-manage their symptoms. By providing objective data about breathing status, it could also alleviate breathlessness-related anxiety, which can otherwise worsen symptoms. This validates the device's value for both patients and clinicians.
+
+For patients with severe COPD, oxygen saturation is a useful metric that often correlates with the degree of breathlessness. However, it is less important to monitor in mild to moderate cases.
+
+Day-to-day breathlessness management differs between patients. Strategies include adopting different body positions, performing specific breathing exercises, and other techniques to slow breathing, such as blowing cool air from a fan onto the face. Patients often need to try several tactics before finding the one that works best for them. To report breathlessness, patients commonly use the Borg scale, a simple 0--10 rating that requires no health literacy.
+
+In terms of device function, the physiotherapist recommended a clear indicator of the patient's breathlessness status, including a way to signal when medical assistance is needed. Integration with clinicians must also be considered, including ensuring data storage complies with regulations and handling cases where a patient stops seeing a clinician but continues to use the device.
+
+These key findings were used to inform the design requirements, concept selection and system operation. Based on this discussion, the device will prioritise people with mild to moderate COPD. As clinician involvement remains important in each patient's COPD management, the device is intended as a supplementary tool rather than a replacement for clinicians, and is expected to be especially useful for newly diagnosed and health-anxious patients. The device is not recommended for severe COPD, where clinicians should be deferred to so that treatment is appropriate and tailored to the individual. Given this, the system omits SpO\textsubscript{2} monitoring and instead uses only PPG sensing to estimate heart rate and respiratory rate. It is also crucial that the design is intuitive, requiring little to no digital literacy to use.
 
 \subsection{Design Requirements}
 The proposed device is intended to coach a person with COPD through a breathing exercise after physical activity or breathlessness. The suitable concept must meet the below requirements, with further detail and performance targets listed in Appendix A.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.8.7)  24 SEP 2026 15:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.8.7)  25 SEP 2026 14:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -569,8 +569,8 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )) (./Sections/ConceptualDesign.tex [1{c:/texlive/2026/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{c:/texlive/2026/texmf-dist/fonts/enc/dvips/base/8r.enc}
 
 
-]) [2] (./Sections/DetailedDesign.tex
-<figures/exploded_view_annotated.png, id=119, 416.2752pt x 413.3844pt>
+] [2]) (./Sections/DetailedDesign.tex
+<figures/exploded_view_annotated.png, id=123, 416.2752pt x 413.3844pt>
 File: figures/exploded_view_annotated.png Graphic file (type png)
 <use figures/exploded_view_annotated.png>
 Package pdftex.def Info: figures/exploded_view_annotated.png  used on input line 11.
@@ -579,42 +579,43 @@ Package pdftex.def Info: figures/exploded_view_annotated.png  used on input line
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) (./Sections/ValidationOfFeasibility.tex [3 <./figures/exploded_view_annotated.png (PNG copy)>]
-<figures/S7_resp_rate_sitting.png, id=128, 794.97pt x 433.62pt>
+[3]) (./Sections/ValidationOfFeasibility.tex
+<figures/S7_resp_rate_sitting.png, id=131, 794.97pt x 433.62pt>
 File: figures/S7_resp_rate_sitting.png Graphic file (type png)
 <use figures/S7_resp_rate_sitting.png>
 Package pdftex.def Info: figures/S7_resp_rate_sitting.png  used on input line 15.
 (pdftex.def)             Requested size: 239.39923pt x 130.58324pt.
-<figures/S8_resp_rate_sitting.png, id=130, 794.97pt x 433.62pt>
+<figures/S8_resp_rate_sitting.png, id=133, 794.97pt x 433.62pt>
 File: figures/S8_resp_rate_sitting.png Graphic file (type png)
 <use figures/S8_resp_rate_sitting.png>
 Package pdftex.def Info: figures/S8_resp_rate_sitting.png  used on input line 16.
 (pdftex.def)             Requested size: 239.39923pt x 130.58324pt.
-<figures/S7_ppg_signal_sitting.png, id=132, 794.97pt x 289.08pt>
+ [4 <./figures/exploded_view_annotated.png (PNG copy)>]
+<figures/S7_ppg_signal_sitting.png, id=143, 794.97pt x 289.08pt>
 File: figures/S7_ppg_signal_sitting.png Graphic file (type png)
 <use figures/S7_ppg_signal_sitting.png>
 Package pdftex.def Info: figures/S7_ppg_signal_sitting.png  used on input line 25.
 (pdftex.def)             Requested size: 239.39923pt x 87.05548pt.
-<figures/S7_ppg_signal_walking.png, id=133, 794.97pt x 289.08pt>
+<figures/S7_ppg_signal_walking.png, id=144, 794.97pt x 289.08pt>
 File: figures/S7_ppg_signal_walking.png Graphic file (type png)
 <use figures/S7_ppg_signal_walking.png>
 Package pdftex.def Info: figures/S7_ppg_signal_walking.png  used on input line 26.
 (pdftex.def)             Requested size: 239.39923pt x 87.05548pt.
- [4 <./figures/S7_resp_rate_sitting.png> <./figures/S8_resp_rate_sitting.png>]
+
 Underfull \vbox (badness 3815) has occurred while \output is active []
 
-) (./Sections/Appendix.tex
-<figures/S7_ppg_resp_rate_sitting.png, id=150, 794.97pt x 650.43pt>
+ [5 <./figures/S7_resp_rate_sitting.png> <./figures/S8_resp_rate_sitting.png> <./figures/S7_ppg_signal_sitting.png> <./figures/S7_ppg_signal_walking.png>]) (./Sections/Appendix.tex
+<figures/S7_ppg_resp_rate_sitting.png, id=165, 794.97pt x 650.43pt>
 File: figures/S7_ppg_resp_rate_sitting.png Graphic file (type png)
 <use figures/S7_ppg_resp_rate_sitting.png>
 Package pdftex.def Info: figures/S7_ppg_resp_rate_sitting.png  used on input line 7.
 (pdftex.def)             Requested size: 438.60315pt x 358.86902pt.
-<figures/S8_ppg_resp_rate_sitting.png, id=151, 794.97pt x 650.43pt>
+<figures/S8_ppg_resp_rate_sitting.png, id=166, 794.97pt x 650.43pt>
 File: figures/S8_ppg_resp_rate_sitting.png Graphic file (type png)
 <use figures/S8_ppg_resp_rate_sitting.png>
 Package pdftex.def Info: figures/S8_ppg_resp_rate_sitting.png  used on input line 14.
 (pdftex.def)             Requested size: 438.60315pt x 358.86902pt.
-) (./main.bbl [5 <./figures/S7_ppg_signal_sitting.png> <./figures/S7_ppg_signal_walking.png>])
+) (./main.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -626,29 +627,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[6
-
- <./figures/S7_ppg_resp_rate_sitting.png>] [7 <./figures/S8_ppg_resp_rate_sitting.png>] (./main.aux)
+[6] [7 <./figures/S7_ppg_resp_rate_sitting.png>] [8 <./figures/S8_ppg_resp_rate_sitting.png>] (./main.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-07-20>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 900989F48C48849233A31697CF9F513D;3062.
+(rerunfilecheck)             Checksum: 82944969FF190531CD15A669A206DCD6;3228.
  ) 
 Here is how much of TeX's memory you used:
- 19177 strings out of 467159
- 372809 string characters out of 5413462
+ 19190 strings out of 467159
+ 372945 string characters out of 5413462
  803869 words of memory out of 5000000
- 47888 multiletter control sequences out of 15000+600000
- 680425 words of font info for 303 fonts, out of 8000000 for 9000
+ 47890 multiletter control sequences out of 15000+600000
+ 681741 words of font info for 308 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 79i,10n,83p,2304b,1193s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 79i,10n,83p,2304b,1040s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2026/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2026/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 1591289 bytes).
+Output written on main.pdf (8 pages, 1594437 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
- 45 named destinations out of 1000 (max. 500000)
- 46260 words of extra memory for PDF output out of 51595 (max. 10000000)
+ 244 PDF objects out of 1000 (max. 8388607)
+ 197 compressed objects within 2 object streams
+ 47 named destinations out of 1000 (max. 500000)
+ 50364 words of extra memory for PDF output out of 51595 (max. 10000000)
 
